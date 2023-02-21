@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto" , "Arial" , "Sans-serif";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+
+.left img{
+    width: 150px;
+    padding-left: 10px;
+
+
+}
+
+.left .material-icons{
+    font-size: 27px;
+}.mid{
+    display: flex;
+    align-items: center;
+    margin-left:-9px ;
+    
+}
+.mid form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+}
+.mid form input{
+    width: 100%;
+    border-radius: 40px 0 0 40px;
+    border: 2px solid #d3d3d3;
+    padding: 12px;
+    border-right: none;
+    font-size: 16px;
+
+}
+.mid form button{
+    border-radius: 0 40px 40px 0;
+    border: 2px solid #d3d3d3;
+    padding-left:10px ;
+    padding-right: 10px;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+
+}
+
+.mid .mic{
+    padding: 9px;
+    margin-left: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.mid .mic:hover{
+    background-color: #e7e7e7e1;
+    border: 1px solid #e2e2e2;
+    transition: 0.2s;
+}
+
+.right{
+    display: flex;
+}
+
+
+.right a{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+
+
+    
+
+}
+.right .material-icons{
+    font-size: 28px;
+}
+.right a:hover{
+    background-color: #e7e7e7e1;
+    border: 1px solid #e2e2e2;
+    transition: 0.2s;
+
+}
+.main-area{
+    height: calc(100vh - 56px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+aside{
+    display: flex;
+    height: 100%;
+    width: 240px;
+    background-color: white;
+    overflow-y: auto;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    padding-right: 15px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+nav span{
+    margin-left: 23px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height:2em ;
+    cursor: pointer;
+
+}
+
+nav .material-icons{
+    font-size: 28px;
+}
+
+.active{
+    background-color: #e5e5e5;
+
+}
+#active-span{
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    background-color: #f0f0f0;
+}
+
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0;
+}
+
+nav p{
+    
+    font-size: 1.4rem;
+    color: #606060;
+    padding: 8px 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+nav .channel-image{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main{
+    border-top: 1px solid #dddd;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    padding: 39px 27px;
+    overflow-y: auto;
+    
+    
+}
+
+.videos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.video{
+    width: 285px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+
+.thumbnail{
+    width: 100%;
+    height: 162px;
+    margin-bottom: 12px;
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.video-details{
+    display: flex;
+}
+
+.creator-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title a{
+    text-decoration: none;
+
+}
+
+.video-title{
+    color: rgb(3, 3, 3);
+    font-size: 1.6rem;
+    max-width: 278px;
+    font-weight: bold;
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+.video-creator , .title span{
+    color: rgb(96, 96, 96);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+
+
+}
+.video-creator:hover{
+    color: black;
+}
